@@ -1,19 +1,19 @@
 import Logo from "../../components/Logo";
 import Menu from "../../components/Menu";
-import Container from "../Container";
 import Navbar from "../Navbar";
 
-export default function Pagina() {
+export interface PaginaProps {
+  children: any;
+}
+
+export default function Page(props: PaginaProps) {
   return (
     <div>
       <Navbar>
-      <Container>
-        <Logo/>
+        <Logo />
         <Menu />
-      </Container>
       </Navbar>
-      <main></main>
-      
+      <main>{props.children}</main>
     </div>
   );
 }
