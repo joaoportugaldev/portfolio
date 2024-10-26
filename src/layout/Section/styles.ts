@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-    width: 80%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-`
+export interface SectionProps {
+  height?: string;
+}
+
+export const Section = styled.section<SectionProps>`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: ${(props) => props.height ?? "auto"};
+
+`;
 
 export const Container = styled.div`
-    max-width: 80%;
-`
+  max-width: 1280px;
+  width: 100%;
+`;

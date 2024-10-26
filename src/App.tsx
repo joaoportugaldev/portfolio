@@ -1,13 +1,16 @@
 import { ThemeProvider } from "styled-components";
-import Pagina from "./layout/Page";
+import Page from "./layout/Page";
 import Theme from "./Theme";
 import GlobalStyle from "./global";
+import Home from "./components/Sections/Home";
 
 function App() {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <Pagina />
+      <Page>
+        <Home />
+      </Page>
     </ThemeProvider>
   );
 }

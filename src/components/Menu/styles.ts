@@ -8,4 +8,5 @@ export const Menu = styled.ul`
     list-style: none;
     color: ${props => props.theme.colors.white};
     padding: 12px;
+    font-weight: ${props => props.theme.fontWeight.medium};
 `

@@ -8,12 +8,12 @@ export interface PaginaProps {
 
 export default function Page(props: PaginaProps) {
   return (
-    <div>
+    <>
       <Navbar>
         <Logo />
         <Menu />
       </Navbar>
       <main>{props.children}</main>
-    </div>
+    </>
   );
 }

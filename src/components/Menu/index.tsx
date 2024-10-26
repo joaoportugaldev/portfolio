@@ -1,19 +1,19 @@
-import BotaoLink from "../BotaoLink";
+import LinkButton from "../LinkButton";
 import * as S from "./styles";
 
 export default function Menu() {
-  const renderizarItem = (ancora: string, texto: string) => {
-    return <BotaoLink href={ancora}>{texto}</BotaoLink>;
+  const renderizarItem = (anchor: string, text: string) => {
+    return <LinkButton href={anchor}>{text}</LinkButton>;
   };
 
   return (
     <S.Menu>
-      {renderizarItem("#inicio", "Início")}
-      {renderizarItem("#sobre", "Sobre mim")}
-      {renderizarItem("#experiencias", "Experiências")}
-      {renderizarItem("#projetos", "Projetos")}
-      {renderizarItem("#certificacoes", "Certificações")}
-      {renderizarItem("#habilidades", "Habilidades")}
+      {renderizarItem("#home", "Home")}
+      {renderizarItem("#about", "About Me")}
+      {renderizarItem("#experience", "Experience")}
+      {renderizarItem("#projets", "Projects")}
+      {renderizarItem("#certificates", "Certificates")}
+      {renderizarItem("#skills", "Skills")}
     </S.Menu>
   );
 }
