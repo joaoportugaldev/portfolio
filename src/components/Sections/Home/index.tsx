@@ -6,7 +6,7 @@ import profile from "../../../assets/profile.jpg";
 
 export default function Home() {
   return (
-    <Section>
+    <Section bgColor="softDark">
       <S.Container>
         <HeadLine />
         <Image

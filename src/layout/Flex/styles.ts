@@ -8,6 +8,7 @@ export interface FlexProps {
   gap?: string;
   width?: string;
   height?: string;
+  margin?: string;
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -19,4 +20,5 @@ export const Flex = styled.div<FlexProps>`
   gap: ${(props: FlexProps) => props.gap ?? "0"};
   width: ${(props: FlexProps) => props.width ?? "auto"};
   height: ${(props: FlexProps) => props.height ?? "auto"};
+  margin: ${props => props.margin ?? "0"};
 `;

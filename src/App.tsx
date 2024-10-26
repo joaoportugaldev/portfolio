@@ -3,6 +3,7 @@ import Page from "./layout/Page";
 import Theme from "./Theme";
 import GlobalStyle from "./global";
 import Home from "./components/Sections/Home";
+import About from "./components/Sections/About";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyle />
       <Page>
         <Home />
+        <About />
       </Page>
     </ThemeProvider>
   );

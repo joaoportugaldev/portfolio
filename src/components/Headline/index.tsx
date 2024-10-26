@@ -13,7 +13,7 @@ export default function HeadLine() {
       width="50%"
       gap="1rem"
     >
-      <Flex direction="column" gap="0.5rem" align="start">
+      <Flex direction="column" gap="0rem" align="start">
         <S.Title>Hi, My</S.Title>
         <Flex gap="1rem">
           <S.Title>Name is</S.Title>
@@ -21,11 +21,10 @@ export default function HeadLine() {
             <S.Highlight heavier={true}>João Portugal</S.Highlight>
           </S.Title>
         </Flex>
+      </Flex>
         <S.Subtitle>
           I'm a <S.Highlight>software developer</S.Highlight> from Brazil
         </S.Subtitle>
-      </Flex>
-
       <Flex gap="0.5rem">
         <Linkedin />
         <Github />

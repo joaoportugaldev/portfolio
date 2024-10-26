@@ -1,8 +1,10 @@
 const Theme = {
     colors: {
         primary: 'rgba(14, 165, 233, 1)',
+        secundary: 'rgba(240, 173, 68, 1)',
         white: '#FFFFFF',
-        dark: '#121212',
+        dark: '#030303',
+        softDark: '#0F0F0F',
         gray: 'rgba(82, 82, 91, 1)',
     },
     fontSize: {

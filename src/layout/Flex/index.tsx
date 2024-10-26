@@ -9,11 +9,21 @@ export interface FlexProps {
   gap?: string;
   width?: string;
   height?: string;
+  margin?: string;
 }
 
 export default function Flex(props: FlexProps) {
-  const { align, children, direction, justify, wrap, gap, width, height } =
-    props;
+  const {
+    align,
+    children,
+    direction,
+    justify,
+    wrap,
+    gap,
+    width,
+    height,
+    margin,
+  } = props;
 
   return (
     <S.Flex
@@ -24,6 +34,7 @@ export default function Flex(props: FlexProps) {
       gap={gap}
       width={width}
       height={height}
+      margin={margin}
     >
       {children}
     </S.Flex>
