@@ -4,8 +4,12 @@ import Media from "../Media";
 import Github from "../SVGs/Github";
 import Instagram from "../SVGs/Instagram";
 import Linkedin from "../SVGs/Linkedin";
+import { useTranslation } from "react-i18next";
 
 export default function HeadLine() {
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
   return (
     <Flex
       direction="column"
@@ -15,16 +19,17 @@ export default function HeadLine() {
       gap="1rem"
     >
       <Flex direction="column" gap="0rem" align="start">
-        <S.Title>Hi, My</S.Title>
+        <S.Title>{t("home_1")}</S.Title>
         <Flex gap="1rem">
-          <S.Title>Name is</S.Title>
+          <S.Title>{t("home_2")}</S.Title>
           <S.Title>
             <S.Highlight heavier={true}>João Portugal</S.Highlight>
           </S.Title>
         </Flex>
       </Flex>
       <S.Subtitle>
-        I'm a <S.Highlight>software developer</S.Highlight> from Brazil
+        {t("home_3")} <S.Highlight>{t("home_4")}</S.Highlight>{" "}
+        {currentLanguage === "en" && t("home_5")}
       </S.Subtitle>
       <Flex gap="0.5rem">
         <Media icon={<Linkedin />} href="https://google.com" />

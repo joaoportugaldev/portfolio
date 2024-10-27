@@ -4,33 +4,26 @@ import SectionTitle from "../../SectionTitle";
 import SimpleText from "../../SimpleText";
 import about_me from "../../../assets/about_me.jpg";
 import Flex from "../../../layout/Flex";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+
+  const {t} = useTranslation();
+
   return (
     <Section padding="2rem 0 2rem 0" id="about">
-      <SectionTitle text="About Me" />
+      <SectionTitle text={t("about_me")} />
       <Flex gap="2rem" align="center" textAlign="start">
         <Image src={about_me} alt="A photo of mine holding a violin" height="24rem"/>
-        <SimpleText fontSize="largeText">
-          I have been dedicated to software development since 2022, and since
-          2023, I have been working professionally as a full-stack developer,
-          focusing on Internet of Things (IoT) solutions. My main stack includes
-          React, TypeScript, Next.js, and Node.js.
+        <SimpleText fontSize="largeText" maxWidth="900px">
+          {t("about_me_paragraph_1")}
           <br />
           <br />
-          My journey began with studies in frontend development, which quickly
-          led me to a position as a Junior Developer. In pursuit of continuous
-          learning, I expanded my knowledge to full-stack application
-          development. I am also experienced with IoT, Ubidots, MQTT, Figma,
-          Tailwind, Sass, and more. I have a particular interest in transforming
-          ideas and business rules into real solutions, applying clean
-          architecture, Domain-Driven Design (DDD), and the Ports and Adapters
+          {t("about_me_paragraph_2")}
           pattern.
           <br />
           <br />
-          In addition to being a developer, I am a musician, teacher, and have
-          experience in digital marketing. You might also want to check out my
-          YouTube channel.
+          {t("about_me_paragraph_3")}
         </SimpleText>
       </Flex>
     </Section>

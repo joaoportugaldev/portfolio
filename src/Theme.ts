@@ -7,6 +7,8 @@ const Theme = {
         dark: '#030303',
         softDark: '#0F0F0F',
         gray: '#2A2A2D',
+        green: "#037B28",
+        red: "#CE272F",
     },
     fontSize: {
         bodyTitle: '3.75rem',

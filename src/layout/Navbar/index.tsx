@@ -1,3 +1,4 @@
+import Language from "../../components/Language";
 import * as S from "./styles";
 
 export interface NavbarProps {
@@ -8,6 +9,7 @@ export default function Navbar(props: NavbarProps) {
   return (
     <S.Navbar>
       <S.Container>{props.children}</S.Container>
+      <Language />
     </S.Navbar>
   );
 }

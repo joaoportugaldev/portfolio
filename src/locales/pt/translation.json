@@ -1,0 +1,16 @@
+{
+  "home": "Início",
+  "about_me": "Sobre mim",
+  "skills": "Habilidades",
+  "projects": "Projetos",
+  "experience": "Experiência",
+  "certificates": "Certificados",
+  "contact": "Contato",
+  "home_1": "Olá, meu",
+  "home_2": "nome é",
+  "home_3": "Eu sou",
+  "home_4": "desenvolvedor de software",
+  "about_me_paragraph_1": "Me dedico à área de desenvolvimento de software desde 2022, e desde 2023 atuo profissionalmente como desenvolvedor full-stack, com foco em soluções de Internet das Coisas (IoT). Minha stack principal inclui React, TypeScript, Next.js e Node.js.",
+  "about_me_paragraph_2": "Minha trajetória começou com estudos em frontend, o que me levou rapidamente a uma posição como Desenvolvedor Júnior. Em busca de aprendizado constante, expandi meus conhecimentos para o desenvolvimento de aplicações full-stack. Também tenho conhecimentos em IoT, Ubidots, MQTT, Figma, Tailwind, Sass etc. Tenho especial interesse em transformar ideias e regras de negócio em soluções reais, aplicando arquitetura limpa, Domain-Driven Design (DDD) e o padrão Ports and Adapters.",
+  "about_me_paragraph_3": "Além de programador, sou músico, professor e tenho experiência em marketing digital. Talvez você possa aproveitar para conhecer meu canal no Youtube também."
+}

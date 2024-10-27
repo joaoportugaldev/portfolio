@@ -10,6 +10,11 @@ export interface FlexProps {
   height?: string;
   margin?: string;
   textAlign?: string;
+  position?: string;
+  top?: string;
+  left?: string;
+  right?: string;
+  bottom?: string;
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -21,6 +26,11 @@ export const Flex = styled.div<FlexProps>`
   gap: ${(props: FlexProps) => props.gap ?? "0"};
   width: ${(props: FlexProps) => props.width ?? "auto"};
   height: ${(props: FlexProps) => props.height ?? "auto"};
-  margin: ${props => props.margin ?? "0"};
-  text-align: ${props => props.textAlign ?? "auto"};
+  margin: ${(props) => props.margin ?? "0"};
+  text-align: ${(props) => props.textAlign ?? "auto"};
+  position: ${(props) => props.position ?? "static"};
+  top: ${(props) => props.top ?? "auto"};
+  left: ${(props) => props.left ?? "auto"};
+  right: ${(props) => props.right ?? "auto"};
+  bottom: ${(props) => props.bottom ?? "auto"};
 `;
