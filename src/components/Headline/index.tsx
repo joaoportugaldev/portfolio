@@ -1,8 +1,9 @@
 import * as S from "./styles";
 import Flex from "../../layout/Flex";
-import Github from "../Media/Github";
-import Instagram from "../Media/Instagram";
-import Linkedin from "../Media/Linkedin";
+import Media from "../Media";
+import Github from "../SVGs/Github";
+import Instagram from "../SVGs/Instagram";
+import Linkedin from "../SVGs/Linkedin";
 
 export default function HeadLine() {
   return (
@@ -22,13 +23,13 @@ export default function HeadLine() {
           </S.Title>
         </Flex>
       </Flex>
-        <S.Subtitle>
-          I'm a <S.Highlight>software developer</S.Highlight> from Brazil
-        </S.Subtitle>
+      <S.Subtitle>
+        I'm a <S.Highlight>software developer</S.Highlight> from Brazil
+      </S.Subtitle>
       <Flex gap="0.5rem">
-        <Linkedin />
-        <Github />
-        <Instagram />
+        <Media icon={<Linkedin />} href="https://google.com" />
+        <Media icon={<Github />} href="https://google.com" />
+        <Media icon={<Instagram />} href="https://google.com" />
       </Flex>
     </Flex>
   );

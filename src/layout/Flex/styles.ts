@@ -9,6 +9,7 @@ export interface FlexProps {
   width?: string;
   height?: string;
   margin?: string;
+  textAlign?: string;
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -21,4 +22,5 @@ export const Flex = styled.div<FlexProps>`
   width: ${(props: FlexProps) => props.width ?? "auto"};
   height: ${(props: FlexProps) => props.height ?? "auto"};
   margin: ${props => props.margin ?? "0"};
+  text-align: ${props => props.textAlign ?? "auto"};
 `;

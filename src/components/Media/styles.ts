@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
-export const Link = styled.a`
-  padding: 0.60rem;
-  background-color: ${(props) => props.theme.colors.gray};
-  border-radius: 0.5rem;
-`;
+export interface MediaProps {
+  hoverBgColor?: string;
+  hoverColor?: string;
+}
 
-export const Image = styled.img`
-  width: 1.5rem;
-  height: 1.5rem;
+export const Link = styled.a<MediaProps>`
+  padding: 0.6rem;
+  background-color: ${(props) => props.hoverBgColor ?? props.theme.colors.gray};
+  border-radius: 0.5rem;
+
+  &:hover svg {
+    fill: ${(props) => props.theme.colors.primary};
+    fill: ${(props) => props.hoverColor ?? props.theme.colors.primary};
+    transition: fill 350ms;
+  }
 `;

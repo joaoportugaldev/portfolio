@@ -10,6 +10,7 @@ export interface FlexProps {
   width?: string;
   height?: string;
   margin?: string;
+  textAlign?: string;
 }
 
 export default function Flex(props: FlexProps) {
@@ -23,6 +24,7 @@ export default function Flex(props: FlexProps) {
     width,
     height,
     margin,
+    textAlign
   } = props;
 
   return (
@@ -35,6 +37,7 @@ export default function Flex(props: FlexProps) {
       width={width}
       height={height}
       margin={margin}
+      textAlign={textAlign}
     >
       {children}
     </S.Flex>
