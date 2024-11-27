@@ -13,5 +13,14 @@
   "home_5": "from Brazil",
   "about_me_paragraph_1": "I have been dedicated to software development since 2022, and since 2023, I have been working professionally as a full-stack developer, focusing on Internet of Things (IoT) solutions. My main stack includes React, TypeScript, Next.js, and Node.js.",
   "about_me_paragraph_2": "My journey began with studies in frontend development, which quickly led me to a position as a Junior Developer. In pursuit of continuous learning, I expanded my knowledge to full-stack application development. I am also experienced with IoT, Ubidots, MQTT, Figma, Tailwind, Sass, and more. I have a particular interest in transforming ideas and business rules into real solutions, applying clean architecture, Domain-Driven Design (DDD), and the Ports and Adapters pattern.",
-  "about_me_paragraph_3": "In addition to being a developer, I am a musician, teacher, and have experience in digital marketing. You might also want to check out my YouTube channel."
+  "about_me_paragraph_3": "In addition to being a developer, I am a musician, teacher, and have experience in digital marketing. You might also want to check out my YouTube channel.",
+  "next_js_description": "Next.js is a React framework that provides hybrid rendering (SSR and SSG), static page generation, simplified routing, integrated API, and performance optimization. It's ideal for building fast, scalable web applications with a focus on SEO, combining efficiency and flexibility in development.",
+  "react_js_description": "JavaScript library for building reactive, scalable user interfaces with a focus on reusable components.",
+  "typescript_description": "A superset of JavaScript that adds static typing, improving safety and productivity in development.",
+  "node_js_description": "JavaScript runtime for backend development, enabling scalable, high-performance applications with an event-driven focus.",
+  "tailwind_css_description": "Utility-first CSS framework that simplifies interface design with ready-to-use and customizable classes.",
+  "styled_components_description": "Styling library for React and React Native that uses CSS-in-JS, combining styles with components.",
+  "sass_description": "CSS preprocessor offering advanced features like variables, mixins, and rule nesting.",
+  "postgresql_description": "Advanced relational database, highly scalable and reliable, with support for extensions and complex transactions.",
+  "ubidots_description": "IoT platform for real-time data monitoring and visualization, simplifying connected device management."
 }
