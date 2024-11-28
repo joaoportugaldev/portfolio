@@ -22,5 +22,6 @@
   "styled_components_description": "Styling library for React and React Native that uses CSS-in-JS, combining styles with components.",
   "sass_description": "CSS preprocessor offering advanced features like variables, mixins, and rule nesting.",
   "postgresql_description": "Advanced relational database, highly scalable and reliable, with support for extensions and complex transactions.",
-  "ubidots_description": "IoT platform for real-time data monitoring and visualization, simplifying connected device management."
+  "ubidots_description": "IoT platform for real-time data monitoring and visualization, simplifying connected device management.",
+  "html_css_js_description": "HTML, CSS, and JavaScript form the foundation of web development. HTML structures content, CSS defines style and layout, and JavaScript adds interactivity, creating dynamic and engaging user experiences."
 }

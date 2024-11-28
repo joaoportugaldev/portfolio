@@ -16,6 +16,8 @@ export interface FlexProps {
   left?: string;
   right?: string;
   bottom?: string;
+  backgroundColor?: string;
+  style?: any;
 }
 
 export default function Flex(props: FlexProps) {
@@ -34,25 +36,29 @@ export default function Flex(props: FlexProps) {
     top,
     left,
     right,
-    bottom
+    bottom,
+    backgroundColor,
+    style,
   } = props;
 
   return (
     <S.Flex
-      direction={direction}
-      align={align}
-      justify={justify}
-      wrap={wrap}
-      gap={gap}
-      width={width}
-      height={height}
-      margin={margin}
-      textAlign={textAlign}
-      position={position}
-      top={top}
-      left={left}
-      right={right}
-      bottom={bottom}
+      $direction={direction}
+      $align={align}
+      $justify={justify}
+      $wrap={wrap}
+      $gap={gap}
+      $width={width}
+      $height={height}
+      $margin={margin}
+      $textAlign={textAlign}
+      $position={position}
+      $top={top}
+      $left={left}
+      $right={right}
+      $bottom={bottom}
+      $backgroundColor={backgroundColor}
+      style={style}
     >
       {children}
     </S.Flex>

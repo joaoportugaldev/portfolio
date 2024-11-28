@@ -6,6 +6,10 @@ export const Title = styled.h2`
 `;
 
 export const ImageContainer = styled.div`
-    width: 400px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
     height: 150px;
 `
