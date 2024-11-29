@@ -5,7 +5,7 @@ export interface LanguageProps {
 }
 
 export const Language = styled.img<LanguageProps>`
-  position: absolute;
+  position: static;
   top: 1.6rem;
   right: 2rem;
   width: 1.8rem;
@@ -16,4 +16,8 @@ export const Language = styled.img<LanguageProps>`
     props.$isLanguageDefault
       ? `${props.theme.colors.green} 0px 0px 12px`
       : `${props.theme.colors.red} 0px 0px 12px`};
+
+    @media (min-width: 1536px) {
+      position: absolute;
+    }
 `;

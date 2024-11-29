@@ -25,4 +25,9 @@ export const Section = styled.section<SectionProps>`
 export const Container = styled.div`
   max-width: 1280px;
   width: 100%;
+  padding: 0 1rem;
+
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
 `;

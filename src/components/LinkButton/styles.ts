@@ -6,6 +6,7 @@ export const LinkButton = styled.a`
   color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.fontSize.largeText};
   letter-spacing: 0.1rem;
+  white-space: nowrap;
 
   &:hover {
     color: ${(props) => props.theme.colors.primary};
