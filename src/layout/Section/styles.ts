@@ -19,6 +19,7 @@ export const Section = styled.section<SectionProps>`
       : props.theme.colors.dark};
   scroll-margin-top: 5rem;
   position: ${(props) => props.$position ?? "static"};
+  overflow: hidden;
 `;
 
 export const Container = styled.div`

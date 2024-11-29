@@ -2,9 +2,10 @@ import { ThemeProvider } from "styled-components";
 import Page from "./layout/Page";
 import Theme from "./Theme";
 import GlobalStyle from "./global";
-import Home from "./components/Sections/Home";
-import About from "./components/Sections/About";
-import Skills from "./components/Sections/Skills";
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Experiences from "./sections/Experiences";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Experiences />
       </Page>
     </ThemeProvider>
   );

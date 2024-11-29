@@ -1,12 +1,12 @@
-import Section from "../../../layout/Section";
-import SectionTitle from "../../SectionTitle";
-import SimpleText from "../../SimpleText";
-import Flex from "../../../layout/Flex";
+import Section from "../../layout/Section";
+import SectionTitle from "../../components/SectionTitle";
+import SimpleText from "../../components/SimpleText";
+import Flex from "../../layout/Flex";
 import { useTranslation } from "react-i18next";
 import * as S from "./styles";
-import skills from "../../../data/skills";
+import skills from "../../data/skills";
 import { useState } from "react";
-import SimpleButton from "../../Buttons/SimpleButton";
+import SimpleButton from "../../components/Buttons/SimpleButton";
 
 export default function Skills() {
   const { t } = useTranslation();

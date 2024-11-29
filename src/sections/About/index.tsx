@@ -1,9 +1,9 @@
-import Image from "../../../layout/Image";
-import Section from "../../../layout/Section";
-import SectionTitle from "../../SectionTitle";
-import SimpleText from "../../SimpleText";
-import about_me from "../../../assets/about_me.jpg";
-import Flex from "../../../layout/Flex";
+import Image from "../../layout/Image";
+import Section from "../../layout/Section";
+import SectionTitle from "../../components/SectionTitle";
+import SimpleText from "../../components/SimpleText";
+import about_me from "../../../src/assets/about_me.jpg";
+import Flex from "../../layout/Flex";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
