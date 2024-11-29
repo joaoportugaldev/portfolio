@@ -4,6 +4,7 @@ export interface SectionProps {
   $height?: string;
   $bgColor?: string;
   $padding?: string;
+  $position?: string;
 }
 
 export const Section = styled.section<SectionProps>`
@@ -17,6 +18,7 @@ export const Section = styled.section<SectionProps>`
       ? props.theme.colors[props.$bgColor]
       : props.theme.colors.dark};
   scroll-margin-top: 5rem;
+  position: ${(props) => props.$position ?? "static"};
 `;
 
 export const Container = styled.div`

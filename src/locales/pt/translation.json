@@ -22,8 +22,7 @@
   "sass_description": "Pré-processador CSS que oferece recursos avançados como variáveis, mixins e aninhamento de regras.",
   "postgresql_description": "Banco de dados relacional avançado, altamente escalável e confiável, com suporte a extensões e transações complexas.",
   "ubidots_description": "Plataforma IoT para monitoramento e visualização de dados em tempo real, facilitando a gestão de dispositivos conectados.",
-  "html_css_js_description": "HTML, CSS e JavaScript formam a base do desenvolvimento web. HTML estrutura o conteúdo, CSS define o estilo e o layout, enquanto JavaScript adiciona interatividade, criando experiências dinâmicas e envolventes para os usuários."
-
-
-
+  "html_css_js_description": "HTML, CSS e JavaScript formam a base do desenvolvimento web. HTML estrutura o conteúdo, CSS define o estilo e o layout, enquanto JavaScript adiciona interatividade, criando experiências dinâmicas e envolventes para os usuários.",
+  "see_more": "Ver mais",
+  "see_less": "Ver menos"
 }

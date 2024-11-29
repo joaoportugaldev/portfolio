@@ -16,6 +16,8 @@ export interface FlexProps {
   $right?: string;
   $bottom?: string;
   $backgroundColor?: string;
+  $style?: string;
+  $maxHeight?: string;
 }
 
 export const Flex = styled.div<FlexProps>`
@@ -35,4 +37,5 @@ export const Flex = styled.div<FlexProps>`
   right: ${(props) => props.$right ?? "auto"};
   bottom: ${(props) => props.$bottom ?? "auto"};
   background-color: ${(props) => props.$backgroundColor ?? "transparent"};
+  ${(props) => props.$style};
 `;

@@ -5,17 +5,35 @@ import Flex from "../../../layout/Flex";
 import { useTranslation } from "react-i18next";
 import * as S from "./styles";
 import skills from "../../../data/skills";
+import { useState } from "react";
+import SimpleButton from "../../Buttons/SimpleButton";
 
 export default function Skills() {
   const { t } = useTranslation();
+  const [isSectionOpened, setIsSectionOpened] = useState(false);
+
+  const toggleSection = () => {
+    setIsSectionOpened((prevState) => !prevState);
+  };
 
   return (
-    <Section padding="2rem 0 3rem 0" id="skills" bgColor="softDark">
+    <Section
+      padding="2rem 0 6rem 0"
+      id="skills"
+      bgColor="softDark"
+      position="relative"
+    >
       <SectionTitle text={t("skills")} />
 
-      <Flex direction="column" gap="2rem" width="100%">
+      <S.SkillsContainer $isSectionOpened={isSectionOpened}>
         {skills.map((skill) => (
-          <Flex gap="2rem" align="start" textAlign="start" width="100%" key={skill.title}>
+          <Flex
+            gap="2rem"
+            align="start"
+            textAlign="start"
+            width="100%"
+            key={skill.title}
+          >
             <Flex direction="column" align="start" gap="1rem" width="100%">
               <S.Title>{skill.title}</S.Title>
               <SimpleText fontSize="largeText" maxWidth="900px">
@@ -27,7 +45,14 @@ export default function Skills() {
             </S.ImageContainer>
           </Flex>
         ))}
-      </Flex>
+      </S.SkillsContainer>
+
+      <S.Overlayer $isSectionOpened={isSectionOpened}>
+        <SimpleButton
+          text={isSectionOpened ? t("see_less") : t("see_more")}
+          onClick={toggleSection}
+        />
+      </S.Overlayer>
     </Section>
   );
 }
