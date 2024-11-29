@@ -18,7 +18,7 @@ export default function Skills() {
 
   return (
     <Section
-      padding="2rem 0 6rem 0"
+      padding="2rem 0 2rem 0"
       id="skills"
       bgColor="softDark"
       position="relative"
@@ -45,14 +45,13 @@ export default function Skills() {
             </S.ImageContainer>
           </Flex>
         ))}
+        <S.Overlayer $isSectionOpened={isSectionOpened}>
+          <SimpleButton
+            text={isSectionOpened ? t("see_less") : t("see_more")}
+            onClick={toggleSection}
+          />
+        </S.Overlayer>
       </S.SkillsContainer>
-
-      <S.Overlayer $isSectionOpened={isSectionOpened}>
-        <SimpleButton
-          text={isSectionOpened ? t("see_less") : t("see_more")}
-          onClick={toggleSection}
-        />
-      </S.Overlayer>
     </Section>
   );
 }

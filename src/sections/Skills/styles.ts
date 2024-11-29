@@ -24,8 +24,10 @@ export const SkillsContainer = styled.div<SectionProps>`
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  max-height: ${(props) => (props.$isSectionOpened ? "auto" : "30rem")};
+  max-height: ${(props) => (props.$isSectionOpened ? "auto" : "67vh")};
   overflow-y: ${(props) => (props.$isSectionOpened ? "visible" : "hidden")};
+  padding-bottom: ${({ $isSectionOpened }) =>
+    $isSectionOpened ? "4rem" : "0"};
 `;
 
 export const Overlayer = styled.div<SectionProps>`
@@ -34,8 +36,7 @@ export const Overlayer = styled.div<SectionProps>`
   bottom: 0;
   left: 0;
   justify-content: center;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+
   width: 100%;
 
   &::after {
@@ -46,6 +47,6 @@ export const Overlayer = styled.div<SectionProps>`
     width: 100%;
     content: "";
     box-shadow: ${({ $isSectionOpened }) =>
-      $isSectionOpened ? "none" : "rgb(15, 15, 15) 0px 1rem 5rem 5rem"};
+      $isSectionOpened ? "none" : "rgb(15, 15, 15) 0 0 5rem 5rem"};
   }
 `;
