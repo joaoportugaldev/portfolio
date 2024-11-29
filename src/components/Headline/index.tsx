@@ -11,13 +11,7 @@ export default function HeadLine() {
   const currentLanguage = i18n.language;
 
   return (
-    <Flex
-      direction="column"
-      align="start"
-      justify="center"
-      width="50%"
-      gap="1rem"
-    >
+    <S.HeadlineContainer>
       <Flex direction="column" gap="0rem" align="start">
         <S.Title>{t("home_1")}</S.Title>
         <Flex gap="1rem">
@@ -36,6 +30,6 @@ export default function HeadLine() {
         <Media icon={<Github />} href="https://google.com" />
         <Media icon={<Instagram />} href="https://google.com" />
       </Flex>
-    </Flex>
+    </S.HeadlineContainer>
   );
 }
