@@ -5,17 +5,27 @@ export interface SectionProps {
 }
 
 export const Title = styled.h2`
+  text-align: center;
+  width: 100%;
   font-size: 2rem;
   color: ${(props) => props.theme.colors.primary};
+
+  @media (min-width: 768px) {
+    text-align: start;
+  }
 `;
 
 export const ImageContainer = styled.div`
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  max-width: 400px;
-  width: 100%;
-  height: 150px;
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    height: 150px;
+  }
 `;
 
 export const SkillsContainer = styled.div<SectionProps>`
@@ -48,5 +58,15 @@ export const Overlayer = styled.div<SectionProps>`
     content: "";
     box-shadow: ${({ $isSectionOpened }) =>
       $isSectionOpened ? "none" : "rgb(15, 15, 15) 0 0 5rem 5rem"};
+  }
+`;
+
+export const Text = styled.p`
+  font-size: 1.2rem;
+  max-width: 900px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: start;
   }
 `;

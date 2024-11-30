@@ -1,6 +1,5 @@
 import Section from "../../layout/Section";
 import SectionTitle from "../../components/SectionTitle";
-import SimpleText from "../../components/SimpleText";
 import Flex from "../../layout/Flex";
 import { useTranslation } from "react-i18next";
 import * as S from "./styles";
@@ -36,9 +35,9 @@ export default function Skills() {
           >
             <Flex direction="column" align="start" gap="1rem" width="100%">
               <S.Title>{skill.title}</S.Title>
-              <SimpleText fontSize="largeText" maxWidth="900px">
+              <S.Text>
                 {t(skill.description)}
-              </SimpleText>
+              </S.Text>
             </Flex>
             <S.ImageContainer>
               <img src={skill.image} alt={skill.title} />
