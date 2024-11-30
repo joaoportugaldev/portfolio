@@ -1,9 +1,8 @@
-import Image from "../../layout/Image";
 import Section from "../../layout/Section";
 import SectionTitle from "../../components/SectionTitle";
 import SimpleText from "../../components/SimpleText";
 import about_me from "../../../src/assets/about_me.jpg";
-import Flex from "../../layout/Flex";
+import * as S from "./styles";
 import { useTranslation } from "react-i18next";
 
 export default function About() {
@@ -12,12 +11,10 @@ export default function About() {
   return (
     <Section padding="2rem 0 3rem 0" id="about">
       <SectionTitle text={t("about_me")} />
-      <Flex gap="2rem" align="center" textAlign="start">
-        <Image
-          src={about_me}
-          alt="A photo of mine holding a violin"
-          height="24rem"
-        />
+      <S.Container>
+        <S.ImageContainer>
+          <S.Image src={about_me} alt={"A photo of mine playing the violin"} />
+        </S.ImageContainer>
         <SimpleText fontSize="largeText" maxWidth="900px">
           {t("about_me_paragraph_1")}
           <br />
@@ -28,7 +25,7 @@ export default function About() {
           <br />
           {t("about_me_paragraph_3")}
         </SimpleText>
-      </Flex>
+      </S.Container>
     </Section>
   );
 }
