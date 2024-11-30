@@ -26,10 +26,11 @@ export default function HeadLine() {
         {currentLanguage === "en" && t("home_5")}
       </S.Subtitle>
       <Flex gap="0.5rem">
-        <Media icon={<Linkedin />} href="https://google.com" />
+        <Media icon={<Linkedin />} href="https://google.com"/>
         <Media icon={<Github />} href="https://google.com" />
         <Media icon={<Instagram />} href="https://google.com" />
       </Flex>
+      <S.Overlayer />
     </S.HeadlineContainer>
   );
 }
