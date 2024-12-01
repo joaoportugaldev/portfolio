@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  /* flex-direction: column; */
   height: 100vh;
   width: 100%;
   color: ${(props) => props.theme.colors.white};
@@ -11,11 +10,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-
-  @media (min-width: 1024px) {
-    /* justify-content: space-between;
-    align-items: center; */
-  }
 `;
 
 export interface ImageContainerProps {
@@ -28,12 +22,6 @@ export const Image = styled.img`
   height: 100%;
   border-radius: 1rem;
   object-fit: cover;
-  /* object-position: top 50px bottom 0px; */
-
-  @media (min-width: 1024px) {
-
-  }
-  
 `;
 
 export const ImageContainer = styled.div<ImageContainerProps>`

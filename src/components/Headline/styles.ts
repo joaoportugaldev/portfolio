@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import profileImage from "../../../src/assets/profile.jpg";
 
 export const HeadlineContainer = styled.div`
   display: flex;
@@ -8,7 +9,7 @@ export const HeadlineContainer = styled.div`
   padding: 0 0 2rem 2rem;
   gap: 1rem;
   z-index: 3;
-  background-image: url("../../../src/assets/profile.jpg");
+  background-image: url(${profileImage});
   background-size: cover;
   position: absolute;
   left: 0;

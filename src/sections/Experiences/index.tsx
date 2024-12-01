@@ -9,8 +9,8 @@ export default function Experiences() {
   const { t } = useTranslation();
 
   return (
-    <Section id="experiences" padding="1rem 0 2rem 0">
-      <SectionTitle text={t("experiences")} />
+    <Section id="experience" padding="1rem 0 2rem 0">
+      <SectionTitle text={t("experience")} />
       <Flex direction="column" gap="1rem">
         {experiencesList.map((e) => {
           return (

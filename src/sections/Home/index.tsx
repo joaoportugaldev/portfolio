@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <Section bgColor="softDark" id="home">
       <S.Container>
-        {/* <S.Overlayer /> */}
         <HeadLine />
         <S.ImageContainer>
           <S.Image src={profile} alt="Profile Picture" />
