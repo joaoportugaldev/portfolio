@@ -26,9 +26,9 @@ export default function HeadLine() {
         {currentLanguage === "en" && t("home_5")}
       </S.Subtitle>
       <Flex gap="0.5rem">
-        <Media icon={<Linkedin />} href="https://google.com"/>
-        <Media icon={<Github />} href="https://google.com" />
-        <Media icon={<Instagram />} href="https://google.com" />
+        <Media icon={<Linkedin />} href="https://www.linkedin.com/in/joaoportugaldev"/>
+        <Media icon={<Github />} href="https://github.com/joaoportugaldev" />
+        <Media icon={<Instagram />} href="https://www.instagram.com/joaoportugal.musica/" />
       </Flex>
       <S.Overlayer />
     </S.HeadlineContainer>

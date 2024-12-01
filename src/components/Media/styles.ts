@@ -9,9 +9,8 @@ export const Link = styled.a<MediaProps>`
   padding: 0.6rem;
   background-color: ${(props) => props.hoverBgColor ?? props.theme.colors.gray};
   border-radius: 0.5rem;
-
+  
   &:hover svg {
-    fill: ${(props) => props.theme.colors.primary};
     fill: ${(props) => props.hoverColor ?? props.theme.colors.primary};
     transition: fill 350ms;
   }
