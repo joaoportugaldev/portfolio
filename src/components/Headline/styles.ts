@@ -6,7 +6,7 @@ export const HeadlineContainer = styled.div`
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  padding: 0 0 1rem 1rem;
+  padding: 0 1rem 1rem 1rem;
   gap: 1rem;
   z-index: 3;
   background-image: url(${profileImage});
