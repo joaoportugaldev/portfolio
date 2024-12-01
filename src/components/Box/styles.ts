@@ -6,6 +6,7 @@ export const Box = styled.div`
   gap: 1rem;
   padding: 2rem;
   border: 1px solid ${({ theme }) => theme.colors.primary};
+  border-radius: 0.25rem;
   width: 100%;
 `;
 
