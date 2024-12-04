@@ -20,6 +20,7 @@ export default function Experiences() {
               description={e.description}
               start={e.start}
               end={e.end}
+              link={e.link}
             />
           );
         })}

@@ -6,11 +6,12 @@ import * as S from "./styles";
 export interface BoxProps {
   title: string;
   description: string;
+  link: string;
   start: string;
   end: string;
 }
 
-export default function Box({ title, description, start, end }: BoxProps) {
+export default function Box({ title, description, start, end, link }: BoxProps) {
   const { t } = useTranslation();
 
   return (
@@ -21,7 +22,7 @@ export default function Box({ title, description, start, end }: BoxProps) {
         <S.Date>
           {start} - {end}
         </S.Date>
-        <S.Link href="./">Linkedin</S.Link>
+        <S.Link href={link} target="_blank">Linkedin</S.Link>
       </Flex>
     </S.Box>
   );

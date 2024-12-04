@@ -24,5 +24,10 @@ export const Date = styled.span`
 export const Link = styled.a`
     text-decoration: none;
     font-size: ${({ theme }) => theme.fontSize.largeText};
+    font-weight: bold;
     color: ${({ theme }) => theme.colors.primary};
+
+    &:hover {
+        text-decoration: underline;
+    }
 `
