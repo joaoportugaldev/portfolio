@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Flex from "../../layout/Flex";
 import SimpleText from "../SimpleText";
 import * as S from "./styles";
@@ -10,15 +11,17 @@ export interface BoxProps {
 }
 
 export default function Box({ title, description, start, end }: BoxProps) {
+  const { t } = useTranslation();
+
   return (
     <S.Box>
       <S.Title>{title}</S.Title>
-      <SimpleText>{description}</SimpleText>
+      <SimpleText>{t(description)}</SimpleText>
       <Flex justify="space-between" width="100%">
         <S.Date>
           {start} - {end}
         </S.Date>
-        <S.Link href="./" >Linkedin</S.Link>
+        <S.Link href="./">Linkedin</S.Link>
       </Flex>
     </S.Box>
   );
