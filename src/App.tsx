@@ -6,6 +6,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Experiences from "./sections/Experiences";
+import Projects from "./sections/Projects";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Skills />
         <Experiences />
+        <Projects />
       </Page>
     </ThemeProvider>
   );
