@@ -2,7 +2,7 @@ import Section from "../../layout/Section";
 import SectionTitle from "../../components/SectionTitle";
 
 import { useTranslation } from "react-i18next";
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/EmblaCarousel";
 import projects from "../../data/projects";
 
 export default function ProjectsSection() {
