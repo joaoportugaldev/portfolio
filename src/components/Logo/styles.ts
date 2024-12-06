@@ -16,3 +16,9 @@ export const LogoDetail = styled.div`
   color: ${(props) => props.theme.colors.primary};
   font-size: ${(props) => props.theme.fontSize.title};
 `;
+
+export const Image = styled.img`
+  height: 3.125rem;
+  width: 3.125rem;
+  object-fit: contain;
+`
