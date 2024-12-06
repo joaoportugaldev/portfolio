@@ -1,24 +1,29 @@
+import portfolio_home from "../assets/portfolio_home.jpg";
+
 const projects = [
   {
-    title: "My first project",
-    description: "This is my first project",
-    status: "Completed",
+    title: "project_portfolio__title",
+    description: "project_portfolio__description",
+    status: "project_status_in_progress",
     repoLink: "https://github.com",
     productionLink: "./",
+    image: portfolio_home,
   },
   {
-    title: "My second project",
-    description: "This is my second project",
-    status: "In progress",
+    title: "project_portfolio__title",
+    description: "project_portfolio__description",
+    status: "project_status_finished",
     repoLink: "https://github.com",
     productionLink: "./",
+    image: portfolio_home,
   },
   {
-    title: "My third project",
-    description: "This is my third project",
-    status: "In progress",
+    title: "project_portfolio__title",
+    description: "project_portfolio__description",
+    status: "project_status_finished",
     repoLink: "https://github.com",
     productionLink: "./",
+    image: portfolio_home,
   },
 ];
 

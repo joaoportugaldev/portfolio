@@ -26,5 +26,11 @@
   "html_css_js_description": "HTML, CSS, and JavaScript form the foundation of web development. HTML structures content, CSS defines style and layout, and JavaScript adds interactivity, creating dynamic and engaging user experiences.",
   "see_more": "See more",
   "see_less": "See less",
-  "experience_sagil": "Sagil is a native IoT (Internet of Things) technology brand created as part of the innovation program at Gnatus, a leader in the dental market. The company focuses on monitoring and ensuring the safety of temperature-sensitive products in the dental, hospital, pharmaceutical, and veterinary sectors. I participated in the development of the solution from the ground up, contributing to every stage—from data collection through sensors to the development of the final platform."
+  "experience_sagil": "Sagil is a native IoT (Internet of Things) technology brand created as part of the innovation program at Gnatus, a leader in the dental market. The company focuses on monitoring and ensuring the safety of temperature-sensitive products in the dental, hospital, pharmaceutical, and veterinary sectors. I participated in the development of the solution from the ground up, contributing to every stage—from data collection through sensors to the development of the final platform.",
+  "repository": "Repository",
+  "production": "Production",
+  "project_status_in_progress": "In progress",
+  "project_status_finished": "Finished",
+  "project_portfolio__title": "My Porfolio",
+  "project_portfolio__description": "Designed to serve as a showcase of my journey, skills, and professional achievements through a simple and elegant interface."
 }

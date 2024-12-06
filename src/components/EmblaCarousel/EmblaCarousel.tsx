@@ -11,6 +11,8 @@ import {
   usePrevNextButtons,
 } from "./EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
+import { ProjectStatus } from "./styles";
+import { useTranslation } from "react-i18next";
 
 const TWEEN_FACTOR_BASE = 0.84;
 
@@ -18,11 +20,19 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 type PropType = {
-  slides: number[];
+  slides: {
+    title: string;
+    description: string;
+    status: string;
+    repoLink: string;
+    productionLink: string;
+    image: string;
+  }[];
   options?: EmblaOptionsType;
 };
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
+  const { t } = useTranslation();
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const tweenFactor = useRef(0);
@@ -97,15 +107,42 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <img
-                className="embla__slide__img"
-                src={`https://picsum.photos/600/350?v=${index}`}
-                alt="Your alt text"
-              />
-            </div>
-          ))}
+          {slides.map((item) => {
+            return (
+              <div className="embla__slide" key={item.title}>
+                <img
+                  className="embla__slide__img"
+                  src={item.image}
+                  alt={t(item.title)}
+                />
+                <div className="project_header">
+                  <h2 className="project_title">{t(item.title)}</h2>
+                  <ProjectStatus status={item.status}>
+                    {t(item.status)}
+                  </ProjectStatus>
+                </div>
+                <p>{t(item.description)}</p>
+                <div className="project_menu">
+                  <a
+                    href={item.repoLink}
+                    target="_blank"
+                    className="project_link"
+                  >
+                    {t("repository")}
+                  </a>
+                  {item.productionLink && (
+                    <a
+                      href={item.productionLink}
+                      target="_blank"
+                      className="project_link"
+                    >
+                      {t("production")}
+                    </a>
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 

@@ -24,7 +24,7 @@ export default function Menu() {
         {renderizarItem("#about", t("about_me"))}
         {renderizarItem("#skills", t("skills"))}
         {renderizarItem("#experience", t("experience"))}
-        {renderizarItem("#projets", t("projects"))}
+        {renderizarItem("#projects", t("projects"))}
         {renderizarItem("#certificates", t("certificates"))}
         {renderizarItem("#contact", t("contact"))}
         <Language />

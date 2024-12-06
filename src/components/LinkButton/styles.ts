@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const LinkButton = styled.a`
+export const LinkButton = styled.a<{initialColor?: string}>`
   position: relative;
   text-decoration: none;
-  color: ${(props) => props.theme.colors.white};
+  color: ${({theme, initialColor}) => initialColor ?? theme.colors.white};
   font-size: ${(props) => props.theme.fontSize.largeText};
   letter-spacing: 0.1rem;
   white-space: nowrap;

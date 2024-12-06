@@ -9,6 +9,7 @@ const Theme = {
         gray: '#2A2A2D',
         green: "#037B28",
         red: "#CE272F",
+        yellow: "#F59E0B"
     },
     fontSize: {
         bodyTitle: '3.75rem',
