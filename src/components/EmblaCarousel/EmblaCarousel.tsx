@@ -23,9 +23,10 @@ type PropType = {
   slides: {
     title: string;
     description: string;
-    status: string;
+    finished: boolean;
+    finishDate: null | string;
     repoLink: string;
-    productionLink: string;
+    productionLink: string | null;
     image: string;
   }[];
   options?: EmblaOptionsType;
@@ -108,6 +109,17 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((item) => {
+            const project_date = item.finishDate
+              ? new Date(item.finishDate).toLocaleDateString(
+                  t("locale_date_string"),
+                  {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric",
+                  }
+                )
+              : null;
+
             return (
               <div className="embla__slide" key={item.title}>
                 <img
@@ -117,8 +129,10 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 />
                 <div className="project_header">
                   <h2 className="project_title">{t(item.title)}</h2>
-                  <ProjectStatus status={item.status}>
-                    {t(item.status)}
+                  <ProjectStatus finished={item.finished}>
+                    {item.finished
+                      ? `${t("project_status_finished")} ${project_date ?? ""}`
+                      : t("project_status_in_progress")}
                   </ProjectStatus>
                 </div>
                 <p>{t(item.description)}</p>

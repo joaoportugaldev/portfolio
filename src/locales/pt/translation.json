@@ -1,4 +1,5 @@
 {
+  "locale_date_string": "pt-BR",
   "home": "Início",
   "about_me": "Sobre mim",
   "skills": "Habilidades",
@@ -9,8 +10,8 @@
   "home_1": "Olá, meu",
   "home_2": "nome é",
   "home_3": "Eu sou",
-  "home_4": "desenvolvedor de software",
-  "about_me_paragraph_1": "Me dedico à área de desenvolvimento de software desde 2022, e desde 2023 atuo profissionalmente como desenvolvedor full-stack, com foco em soluções de Internet das Coisas (IoT). Minha stack principal inclui React, TypeScript, Next.js e Node.js.",
+  "home_4": "engenheiro de software",
+  "about_me_paragraph_1": "Me dedico à área de engenharia de software desde 2022, e desde 2023 atuo profissionalmente como desenvolvedor full-stack, com foco em soluções de Internet das Coisas (IoT). Minha stack principal inclui React, TypeScript, Next.js e Node.js.",
   "about_me_paragraph_2": "Minha trajetória começou com estudos em frontend, o que me levou rapidamente a uma posição como Desenvolvedor Júnior. Em busca de aprendizado constante, expandi meus conhecimentos para o desenvolvimento de aplicações full-stack. Também tenho conhecimentos em IoT, Ubidots, MQTT, Figma, Tailwind, Sass etc. Tenho especial interesse em transformar ideias e regras de negócio em soluções reais, aplicando arquitetura limpa, Domain-Driven Design (DDD) e o padrão Ports and Adapters.",
   "about_me_paragraph_3": "Além de programador, sou músico, professor e tenho experiência em marketing digital. Talvez você possa aproveitar para conhecer meu canal no Youtube também.",
   "next_js_description": "Next.js é um framework React que oferece renderização híbrida (SSR e SSG), geração de páginas estáticas, roteamento simplificado, API integrada e otimização de desempenho. Ideal para criar aplicações web rápidas, escaláveis e com foco em SEO, unindo eficiência e flexibilidade no desenvolvimento.",
@@ -29,7 +30,11 @@
   "repository": "Repositório",
   "production": "Produção",
   "project_status_in_progress": "Em desenvolvimento",
-  "project_status_finished": "Finalizado",
+  "project_status_finished": "Finalizado em",
   "project_portfolio__title": "Meu Portfólio",
-  "project_portfolio__description": "Desenvolvido para servir como uma vitrine da minha trajetória, habilidades e conquistas profissionais através de uma interface simples e elegante."
+  "project_portfolio__description": "Desenvolvido para servir como uma vitrine da minha trajetória, habilidades e conquistas profissionais através de uma interface simples e elegante.",
+  "project_efood__title": "EFood",
+  "project_efood__description": "Aplicação frontend desenvolvida em React, projetada para exibir um catálogo de restaurantes e pratos.",
+  "project_todo_app__title": "Todo App",
+  "project_todo_app__description": "A aplicação fullstack mais simples, desenvolvida com Next, SQLite, Prisma e utilizando arquitetura limpa. Projetada para ser a lista de tarefas mais simples."
 }
