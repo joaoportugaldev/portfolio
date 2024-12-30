@@ -36,5 +36,9 @@
   "project_efood__title": "EFood",
   "project_efood__description": "Aplicação frontend desenvolvida em React, projetada para exibir um catálogo de restaurantes e pratos.",
   "project_todo_app__title": "Todo App",
-  "project_todo_app__description": "A aplicação fullstack mais simples, desenvolvida com Next, SQLite, Prisma e utilizando arquitetura limpa. Projetada para ser a lista de tarefas mais simples."
+  "project_todo_app__description": "A aplicação fullstack mais simples, desenvolvida com Next, SQLite, Prisma e utilizando arquitetura limpa. Projetada para ser a lista de tarefas mais simples.",
+  "project_disney_movie_page__title": "Página de Filme Disney",
+  "project_disney_movie_page__description": "Uma reprodução de uma página de filme da Disney usando HTML, SASS, JavaScript e Gulp.",
+  "project_contact_list__title": "Lista de Contatos",
+  "project_contact_list__description": "A lista de contatos mais simples possível desenvolvida com React."
 }

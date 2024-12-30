@@ -37,5 +37,9 @@
   "project_efood__title": "EFood",
   "project_efood__description": "Frontend application developed with React, designed to display a catalog of restaurants and dishes.",
   "project_todo_app__title": "Todo App",
-  "project_todo_app__description": "The simpliest fullstack application developed with Next, SQLite, Prisma and using clean architecture. Designed to be the simpliest to do list."
+  "project_todo_app__description": "The simpliest fullstack application developed with Next, SQLite, Prisma and using clean architecture. Designed to be the simpliest to do list.",
+  "project_disney_movie_page__title": "Disney Movie Page",
+  "project_disney_movie_page__description": "A reproduction of a disney movie page using HTML, SASS, JavaScript e Gulp.",
+  "project_contact_list__title": "Contact List",
+  "project_contact_list__description": "The simpliest contact list posible developed with React."
 }
